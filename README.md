@@ -34,7 +34,7 @@ The project uses a SQL Server database. The database schema is defined in the pr
 
 ---
 
-## Installation Instructions
+## How to run this project in your local system
 
 1. Clone the repository:
 
