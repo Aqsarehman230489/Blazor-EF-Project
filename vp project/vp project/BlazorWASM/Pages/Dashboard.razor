@@ -1,0 +1,89 @@
+﻿@page "/Dashboard"
+
+<div class="container my-4">
+    <h3 class="dashboard-title">Dashboard</h3>
+
+    <div class="row">
+        <!-- Sales Card -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5>Sales | Today</h5>
+                    <h2>145</h2>
+                    <p class="text-success">12% increase</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Card -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5>Revenue | This Month</h5>
+                    <h2>$3,264</h2>
+                    <p class="text-success">8% increase</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customers Card -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5>Customers | This Year</h5>
+                    <h2>1244</h2>
+                    <p class="text-danger">12% decrease</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Existing Reports Chart -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Report </h5>
+                    <img src="/images/Screenshot 2025-01-07 090645.jpg" alt="Reports Chart" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- Existing Recent Activity -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Recent Activity | Today</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>32 min ago:</strong> Updated settings</li>
+                        <li><strong>2 hrs ago:</strong> Processed order</li>
+                        <li><strong>1 day ago:</strong> Sent invoice</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ </div>
+   
+
+
+<style>
+    .dashboard-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .card {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+    .card-body h5 {
+        color: #6c757d;
+    }
+    .breadcrumb {
+        background: transparent;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+</style>

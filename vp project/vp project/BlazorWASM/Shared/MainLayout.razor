@@ -1,0 +1,124 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JsRuntime
+@inject NavigationManager Navigation
+@inject HttpClient http
+
+<div class="main-layout">
+    <NavMenu />
+    <div class="main-content">
+
+        <header class="navbar">
+            <h2>Admin Panel</h2>
+            <div class="user-info">
+                <NavLink class="logout-button" @onclick="Logout">Log out</NavLink>
+                <img src="/images/admin.webp" alt="Admin Profile" class="profile-img" />
+            </div>
+        </header>
+
+        <main class="content-area">
+            @Body
+        </main>
+    </div>
+</div>
+
+@code {
+    private async Task Logout()
+    {
+        
+        await JsRuntime.InvokeVoidAsync("localStorage.removeItem", "loggedIn");
+
+        
+            Console.WriteLine("Logout successfull.");
+            
+
+            // Redirect the user to the login page
+            Navigation.NavigateTo("/");
+        
+    }
+}
+
+
+
+<style>
+    
+    .main-layout {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+       
+        .main-layout .sidebar {
+            flex: 0 0 250px; 
+            background-color: #1F3B4D;
+            color: white;
+            height: 100%;
+            position: fixed;
+        }
+
+   
+    .main-content {
+        margin-left: 250px; 
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: #f4f5f7;
+        overflow-y: auto;
+    }
+
+   
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #394a5f;
+        color: white;
+        border-bottom: 1px solid #ccc;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+        .navbar .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar .profile-img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+    
+.logout-button {
+    display: inline-block;
+        background-color: #ff8c00;
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 6px; 
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.logout-button:hover {
+            background-color: #b66e00;
+        }
+
+    .content-area {
+        padding: 20px;
+        flex: 1;
+        overflow-y: auto;
+    }
+</style>

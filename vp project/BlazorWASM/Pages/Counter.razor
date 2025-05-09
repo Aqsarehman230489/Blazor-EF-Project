@@ -1,0 +1,178 @@
+﻿@page "/EditProduct/{id:int}"
+@using BlazorCRUD.library
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+
+<h3>Edit Product</h3>
+
+@if (Product == null)
+{
+    <p>No Product</p>
+}
+else
+{
+    <EditForm Model="Product" OnValidSubmit="UpdateProduct">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <InputText id="name" class="form-control" @bind-Value="Product.Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <InputText id="description" class="form-control" @bind-Value="Product.Description" />
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price</label>
+            <InputNumber id="price" class="form-control" @bind-Value="Product.Price" />
+        </div>
+
+        <div class="form-group">
+            <label for="imageUrl">Image URL</label>
+            <InputText id="imageUrl" class="form-control" @bind-Value="Product.ImageUrl" />
+        </div>
+
+        <div class="form-group">
+            <label for="category">Category</label>
+            <InputText id="category" class="form-control" @bind-Value="Product.Category" />
+        </div>
+
+        <div class="form-buttons">
+            <button class="btn btn-success" type="submit">Update Product</button>
+            <button class="btn btn-secondary" type="button" @onclick="CancelEdit">Cancel</button>
+        </div>
+    </EditForm>
+}
+
+
+@code {
+    private Product Product = new();
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            
+            Product = await Http.GetFromJsonAsync<Product>($"https://localhost:7007/api/Products/{Id}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading product: {ex.Message}");
+        }
+    }
+
+    private async Task UpdateProduct()
+    {
+        try
+        {
+            
+            var response = await Http.PutAsJsonAsync($"https://localhost:7007/api/Products/{Id}", Product);
+            if (response.IsSuccessStatusCode)
+            {
+                NavigationManager.NavigateTo("/ProductDetails"); 
+            }
+            else
+            {
+                Console.WriteLine($"Error updating product: {response.ReasonPhrase}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error updating product: {ex.Message}");
+        }
+    }
+
+    private void CancelEdit()
+    {
+        
+        NavigationManager.NavigateTo("/ProductDetails");
+    }
+}
+<style>
+   
+.product-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-form h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+    height: 120px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+
+</style>

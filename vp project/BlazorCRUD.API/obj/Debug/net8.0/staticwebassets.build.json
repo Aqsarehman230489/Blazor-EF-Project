@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9TqOtthVqBCVdcxDmNfh2iiialcd4ZY+IRf5i/ChIcc=",
+  "Source": "BlazorCRUD.API",
+  "BasePath": "_content/BlazorCRUD.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
