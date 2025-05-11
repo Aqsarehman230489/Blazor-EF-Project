@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.API\\BlazorCRUD.API.csproj": {}
+    "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.API\\BlazorCRUD.API.csproj": {}
   },
   "projects": {
-    "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.API\\BlazorCRUD.API.csproj": {
+    "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.API\\BlazorCRUD.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.API\\BlazorCRUD.API.csproj",
+        "projectUniqueName": "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.API\\BlazorCRUD.API.csproj",
         "projectName": "BlazorCRUD.API",
-        "projectPath": "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.API\\BlazorCRUD.API.csproj",
+        "projectPath": "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.API\\BlazorCRUD.API.csproj",
         "packagesPath": "C:\\Users\\Aqsa\\.nuget\\packages\\",
-        "outputPath": "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.API\\obj\\",
+        "outputPath": "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aqsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj": {
-                "projectPath": "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj"
+              "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj": {
+                "projectPath": "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj"
               }
             }
           }
@@ -110,14 +110,14 @@
         }
       }
     },
-    "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj": {
+    "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj",
+        "projectUniqueName": "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj",
         "projectName": "BlazorCRUD.library",
-        "projectPath": "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj",
+        "projectPath": "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.library\\BlazorCRUD.library.csproj",
         "packagesPath": "C:\\Users\\Aqsa\\.nuget\\packages\\",
-        "outputPath": "D:\\visual programming\\vp project\\vp project\\BlazorCRUD.library\\obj\\",
+        "outputPath": "C:\\Users\\Aqsa\\Desktop\\EF-project\\vp project\\BlazorCRUD.library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aqsa\\AppData\\Roaming\\NuGet\\NuGet.Config",

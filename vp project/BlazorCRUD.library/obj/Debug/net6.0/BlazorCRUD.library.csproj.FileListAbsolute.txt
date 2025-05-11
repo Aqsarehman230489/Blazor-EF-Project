@@ -46,3 +46,16 @@ D:\visual programming\vp project\vp project\BlazorCRUD.library\obj\Debug\net6.0\
 D:\visual programming\vp project\vp project\BlazorCRUD.library\obj\Debug\net6.0\refint\BlazorCRUD.library.dll
 D:\visual programming\vp project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.pdb
 D:\visual programming\vp project\vp project\BlazorCRUD.library\obj\Debug\net6.0\ref\BlazorCRUD.library.dll
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\bin\Debug\net6.0\BlazorCRUD.library.deps.json
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\bin\Debug\net6.0\BlazorCRUD.library.dll
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\bin\Debug\net6.0\BlazorCRUD.library.pdb
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.sourcelink.json
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.dll
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\refint\BlazorCRUD.library.dll
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\BlazorCRUD.library.pdb
+C:\Users\Aqsa\Desktop\EF-project\vp project\BlazorCRUD.library\obj\Debug\net6.0\ref\BlazorCRUD.library.dll
