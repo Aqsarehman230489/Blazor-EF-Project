@@ -73,4 +73,6 @@ To set up the database using Entity Framework, follow these steps:
     ```
 
 These commands will generate and apply the migrations, creating the database based on the `DbContext` class in the project.
+![Project Screenshot](UI-Images/Home.jpg)
+
 
